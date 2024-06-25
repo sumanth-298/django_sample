@@ -1,0 +1,10 @@
+<html>
+<body>
+<h1>Departments Operating</h1>
+<ul>
+  {% for x in mydepts %}
+    <li><a href="departments/{{ x.DepartmentId }}">{{ x.DepartmentName }}</a></li>
+  {% endfor %}
+</ul>
+</body>
+</html>   

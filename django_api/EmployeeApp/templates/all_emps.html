@@ -1,0 +1,10 @@
+<html>
+<body>
+<h1>Employees Working</h1>
+<ul>
+  {% for x in mydepts %}
+    <li><a href="employees/{{ x.EmployeeId }}">{{ x.EmployeeName }}</a></li>
+  {% endfor %}
+</ul>
+</body>
+</html>   

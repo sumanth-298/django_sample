@@ -1,0 +1,14 @@
+<html>
+    <title>login</title>
+    <h2>Log in</h2>
+    <form action="{% url 'login'%}" method="post">
+        {% csrf_token %}
+        <label for="EmployeeName">Employee Name: </label><br>
+        <input type="text" id="EmployeeName" name="EmployeeName"></br>
+        <label for="Password">Enter password: </label><br>
+        <input type="password" id="Password" name="Password"></br></br>
+        <input type="button" value="Log in"></br></br>
+        New Employee? <a href="signup.html">Sign up</a></br>
+        Forgot Password? <a href="reset.html">Reset</a>
+    </form>
+</html>

@@ -7,8 +7,7 @@ class DepatrtmentSerializer(serializers.ModelSerializer):
         model = Departments
         fields=('DepartmentId','DepartmentName')
 
-
 class EmployeeSerializer(serializers.ModelSerializer):
     class Meta:
         model =Employees
-        fields=('EmployeeId','EmployeeName','Department','DateOfJoining')
+        fields=('EmployeeId','EmployeeName','Department','DateOfJoining','Password') 
